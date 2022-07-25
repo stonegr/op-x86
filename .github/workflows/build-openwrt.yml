@@ -113,7 +113,7 @@ jobs:
 
     - name: Check space usage
       id: do_config
-      run: df -hT & cp -f openwrt/.config openwrt/.config openwrt/bin/targets/x86/64/config.txt
+      run: df -hT & cp -f openwrt/.config openwrt/bin/targets/x86/64/config.txt
 
     - name: Upload bin directory
       uses: actions/upload-artifact@main
